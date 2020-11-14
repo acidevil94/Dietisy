@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="1"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/list_selector"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="60dp"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.85"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.3"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="11dp"
+                    android:text="Collo:" />
+
+                <TextView
+                    android:id="@+id/textViewCollo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:typeface="sans"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:id="@+id/imgTrendingCollo"
+                    android:src="@drawable/ic_trending_up_green_24dp"
+                    android:layout_height="match_parent" />
+
+
+                <TextView
+                    android:id="@+id/txtDifferenzaCollo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:textSize="11dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:typeface="serif"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.3"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="11dp"
+                    android:text="Vita:" />
+
+                <TextView
+                    android:id="@+id/textViewVita"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:typeface="sans"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:id="@+id/imgTrendingVita"
+                    android:src="@drawable/ic_trending_up_green_24dp"
+                    android:layout_height="match_parent" />
+
+
+                <TextView
+                    android:id="@+id/txtDifferenzaVita"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:textSize="11dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:typeface="serif"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.3"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="11dp"
+                    android:text="Fianchi:" />
+
+                <TextView
+                    android:id="@+id/textViewFianchi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:typeface="sans"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:id="@+id/imgTrendingFianchi"
+                    android:src="@drawable/ic_trending_up_green_24dp"
+                    android:layout_height="match_parent" />
+
+
+                <TextView
+                    android:id="@+id/txtDifferenzaFianchi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:textSize="11dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:typeface="serif"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1">
+
+                <TextView
+                    android:id="@+id/textViewData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="2017/80/85"
+                    android:layout_marginLeft="15dp"
+                    android:typeface="serif"
+                    android:textSize="8dp"
+                    android:textStyle="italic"
+                    android:textColor="#000"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_gravity="right"
+            android:background="#FF0000"
+            android:gravity="right|center"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnDeleteListItem"
+                android:background="#FF0000"
+                android:src="@drawable/ic_delete_white_24dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

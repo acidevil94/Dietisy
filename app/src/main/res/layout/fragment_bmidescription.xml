@@ -1,0 +1,396 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:minWidth="850dp"
+    android:minHeight="600dp"
+    android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_title_size_1"
+                android:text="Indice di Massa Corporea (BMI)" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/desc_BMI"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textStyle="" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/txtBMIFrag"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="Il tuo BMI: 34.5"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:weightSum="1.42"
+            >
+            <LinearLayout
+                android:id="@+id/pnlBMISottopesoGrave"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:padding="10dp"
+                        android:background="@color/color_BMI_sottopesoGrave"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="SOTTOPESO GRAVE"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:text="&lt; 16.5"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pnlBMISottopesoLieve"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:padding="10dp"
+                    android:background="@color/color_BMI_sottopesoLieve"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="SOTTOPESO LIEVE"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:text="16.5 - 18.5"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pnlBMINormopeso"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:padding="10dp"
+                        android:background="@color/color_BMI_normopeso"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="NORMOPESO"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:text="18.5 - 25"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pnlBMISovrappeso"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:padding="10dp"
+                        android:background="@color/color_BMI_sovrappeso"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="SOVRAPPESO"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:text="25 - 30"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pnlBMIObeso1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:padding="10dp"
+                        android:background="@color/color_BMI_obesoClasse1"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="OBESO CLASSE I"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:text="30 - 35"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pnlBMIObeso2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:padding="10dp"
+                    android:background="@color/color_BMI_obesoClasse2"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="OBESO CLASSE II"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="35 - 40"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pnlBMIObeso3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:padding="10dp"
+                        android:background="@color/color_BMI_obesoClasse3"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="OBESO CLASSE III"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:text="&gt; 40"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btnOkBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:layout_marginTop="10dp"
+
+            android:text="OK"
+            android:textColor="@color/colorPrimary"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>

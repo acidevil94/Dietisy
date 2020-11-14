@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_custom_layout"
+    android:minHeight="200dp"
+    android:minWidth="650dp"
+    android:background="#fff"
+    android:weightSum="1"
+    android:orientation="vertical"
+     android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="0.7">
+
+        <TextView
+            android:id="@+id/txtMsgBoxMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="This is a sample popup window."
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center|bottom"
+    android:weightSum="1"
+    android:orientation="horizontal">
+
+        <Button
+            android:text="No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMsgBoxNo"
+            android:textColor="@color/colorPrimary"/>
+
+        <Button
+            android:text="Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMsgBoxYes"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

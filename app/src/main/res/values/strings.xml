@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Dietisy</string>
+
+
+    <string name="preference_file_key">com.example.andrea.mydiet.PREFERENCES_FILE</string>
+    <string name="prefkey_tall">com.example.andrea.mydiet_PREFKEY_TALL</string>
+    <string name="prefkey_sex">com.example.andrea.mydiet_PREFKEY_SEX</string>
+    <string name="prefkey_data_nascita">com.example.andrea.mydiet_PREFKEY_DATA_NASCITA</string>
+    <string name="prefkey_polso">com.example.andrea.mydiet_PREFKEY_POLSO</string>
+    <string name="prefkey_livello_attivita">com.example.andrea.mydiet_PREFKEY_LIVELLO_ATTIVITA</string>
+    <string name="prefkey_peso_obiettivo">com.example.andrea.mydiet_PREFKEY_PESO_OBIETTIVO</string>
+    <string name="prefkey_prima_apertura"> com.example.andrea.mydiet_PREFKEY_PRIMA_APERTURA </string>
+    <string name="prefkey_nome">com.example.andrea.mydiet_PREFKEY_NOME</string>
+    <string name="prefkey_peso_iniziale">com.example.andrea.mydiet_PREFKEY_PESO_INIZIALE</string>
+
+    <!-- <string name="prefkey_cognome" />  -->
+
+
+    <string name="desc_BMI_sottopesoGrave">Sottopeso Grave, ti consigliamo di visitare un medico per trovare una dieta adeguata.</string>
+    <string name="desc_BMI_sottopesoLieve">Sottopeso Lieve, arricchisci la tua dieta di calorie.</string>
+    <string name="desc_BMI_normopeso">Normopeso, i tuoi valori sono decisamente normali, continua così!</string>
+    <string name="desc_BMI_sovrappeso">Sovrappeso, occhio al tuo stile di vita.</string>
+    <string name="desc_BMI_obesoClasse1">Obeso Lieve, contatta uno specialista ed inizia a fare attività sportiva.</string>
+    <string name="desc_BMI_obesoClasse2">Obeso Classe II, faresti meglio a contattare un nutrizionista ed iniziare a fare passeggiate</string>
+    <string name="desc_BMI_obesoClasse3">Fortemente Obeso, ti consigliamo di visitare uno specialista per trovare una soluzione al tuo stato di salute.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_motto">Tieni d\'occhio la tua salute!</string>
+
+
+    <string-array name="livelli_attivita">
+        <item>Sedentario</item>
+        <item>Leggermente Attivo</item>
+        <item>Moderatamente Attivo</item>
+        <item>Molto Attivo</item>
+        <item>Estremamente Attivo</item>
+    </string-array>
+
+    <string name="title_activity_startup">Dietisy</string>
+    <string name="spigazioneStartupPeso">
+            Benvenuto su Dietisy!!! Qui potrai registrare i tuoi progressi compiuti nella tua dieta,
+            tenendo traccia del tuo peso e le tue misure corporee. Calcola il tuo BMI,
+            il tuo peso ideale e la percentuale di massa grassa.
+            Tieni d\'occhio la tua salute con Dietisy!\n
+            Adesso parlaci un pò di te!
+
+    </string>
+    <string name="spigazioneStartupObiettivo">
+        Seleziona il tuo obiettivo di peso per monitorare i progressi effettuati insieme a Dietisy!\n
+        Dietisy ha calcolato per te un valore di riferimento vicino al quale si dovrebbe trovare
+        il tuo peso, rispetto ai valori inseriti.
+    </string>
+    <string name="header_obiettivi_frag">Adesso che hai inserito le tue attuali condizioni, dicci quali sono i tuoi obiettivi!</string>
+    <string name="title_activity_prova">ProvaActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="desc_BMI">
+        L\' Indice di massa corporea (BMI) è un parametro molto utilizzato per ottenere una valutazione generale del proprio peso corporeo.
+    </string>
+
+    <string name="test">
+        18.5
+    </string>
+    <string name="desc_MG">
+        Percentuale del peso corporeo costituito da tessuto adiposo, cioè da grasso.
+        Col variare della massa grassa varia il fabbisogno calorico giornaliero.
+    </string>
+    <string name="desc_WH">Introdotto da poco, il rapporto fra il girovita e l\'altezza sembra essere un indicatore molto efficace della salute di una persona.</string>
+    <string name="desc_diet">Il fabbisogno calorico di un individuo si calcola a partire dal suo metabolismo basale, che rappresenta la quantità di energia utilizzata dal corpo per mantenere le funzioni vitali a riposo. Al metabolismo basale si va ad aggiungere l\'energia usata per attività fisiche.</string>
+    <string name="error_msg_form_not_filled">Per favore, inserisci tutti i valori richiesti per proseguire.</string>
+    <string name="success_element_saved">Valore salvato con successo.</string>
+    <string name="word_lost">Persi</string>
+    <string name="success_element_deleted">Valore eliminato correttamente.</string>
+
+
+</resources>

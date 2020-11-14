@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_peso"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="850dp"
+    android:minHeight="450dp"
+    android:orientation="vertical"
+    android:weightSum="0.55"
+    android:background="#fff"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_title_size_1"
+        android:text="Inserisci Nuovo Peso" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Data"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="0.35" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.65"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/btnInserisciDataPeso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_calendar_filled"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.45"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDataPeso"
+                android:hint="Seleziona una data..."
+                android:gravity="center"
+                android:textStyle=""
+                android:textColor="#000"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_weight="0.5">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Peso"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textColorHint="@color/colorPrimary"
+                android:ems="10"
+                android:id="@+id/txtPesoValore" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:text="Kg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_weight="0.19" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="bottom|center">
+
+
+        <Button
+            android:text="Annulla"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnInserisciPesoAnnulla"
+            android:textColor="@color/colorPrimary"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_gravity="center"/>
+
+
+        <Button
+            android:text="Salva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnInserisciPesoSalva"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

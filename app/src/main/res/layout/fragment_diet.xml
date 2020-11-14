@@ -1,0 +1,192 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragment_diet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="850dp"
+        android:minHeight="550dp"
+        android:orientation="vertical"
+        android:weightSum="0.8"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_title_size_1"
+            android:text="Fabbisogno Carolico Giornaliero" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/desc_diet"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textStyle="" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:weightSum="1">
+
+
+        <TextView
+            android:text="Livello Attività"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_weight="0.3" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4">
+
+
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:id="@+id/btnSedentarioDiet"
+                android:background="#fff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_sedentario_nofill"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:id="@+id/btnLeggermenteAttivoDiet"
+                android:background="#fff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_leggermente_attivo_nofill"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:id="@+id/btnAttivoDiet"
+                android:background="#fff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_attivo_nofill"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:id="@+id/btnMoltoAttivoDiet"
+                android:background="#fff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_molto_attivo_nofill"/>
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:id="@+id/btnExtAttivoDiet"
+                android:background="#fff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_ext_attivo_nofill"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtLvlAttivitàDiet"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="Moderatamente Attivo"
+            android:textStyle=""
+            android:layout_weight="0.25" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Metabolismo Basale:"/>
+            <TextView
+                android:id="@+id/txtMetabolismoBasaleDiet"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textStyle=""
+                android:text="2500 Kcal"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="Metabolismo Totale:"/>
+        <TextView
+            android:id="@+id/txtMetabolismoTotaleDiet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textStyle=""
+            android:text="300 Kcal"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:gravity="bottom|center">
+
+
+            <Button
+                android:text="OK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDietFragOK"
+                android:textColor="@color/colorPrimary"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>

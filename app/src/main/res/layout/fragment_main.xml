@@ -1,0 +1,693 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.andrea.dietisy.fragment.MainFragment">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:elevation="20dp"
+        android:id="@+id/pnlFABS"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_ruler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="125dp"
+            app:srcCompat="@drawable/ic_ruler"
+            android:visibility="invisible"
+            app:pressedTranslationZ="12dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="75dp"
+            app:srcCompat="@drawable/ic_weight_kilogram"
+            android:visibility="invisible"
+            app:pressedTranslationZ="12dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/ic_add_black_24dp"
+
+            app:pressedTranslationZ="12dp"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrllMain"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65"
+                    android:layout_margin="8dp"
+                    android:elevation="@dimen/cardview_default_elevation"
+                    card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:weightSum="1"
+                            android:gravity="center|right|top"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:orientation="horizontal">
+
+
+                        <com.github.lzyzsd.circleprogress.ArcProgress
+                            android:id="@+id/arcObiettivoMain"
+                            custom:arc_finished_color="@color/colorPrimary"
+                            custom:arc_text_color="@color/colorPrimary"
+                            custom:arc_unfinished_color="#c2c2a3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.55"
+                            custom:arc_progress="55"
+                            custom:arc_bottom_text="Progresso"/>
+
+
+                            <ImageView
+                                android:id="@+id/btnObiettivoMain"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:src="@drawable/ic_trofeo_filled"/>
+
+                        </LinearLayout>
+
+                        <!-- TODO: mettere un button per impostare nuovo obiettivo -->
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/darker_gray" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:paddingTop="10dp"
+                                android:gravity="center"
+                                android:layout_weight="0.48"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.3"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_flag_filled"
+                                        android:layout_weight=".2"/>
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4"
+                                        android:text="Peso Iniziale"
+                                        android:gravity="center"
+                                        android:textAlignment="center"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:textAlignment="center"
+                                        android:textStyle=""
+                                        android:textColor="#000"
+                                        android:gravity="center"
+                                        android:id="@+id/txtPesoIniziale"
+                                        android:layout_weight="0.4"
+                                        android:text="100 Kg"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.3"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_star_filled"
+                                        android:layout_weight=".2"/>
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4"
+                                        android:text="Obiettivo"
+                                        android:gravity="center"
+                                        android:textAlignment="center"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:textAlignment="center"
+                                        android:textStyle=""
+                                        android:textColor="#000"
+                                        android:gravity="center"
+                                        android:id="@+id/txtPesoObiettivoMain"
+                                        android:layout_weight="0.4"
+                                        android:text="100 Kg"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.3"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_bilancia_filled"
+                                        android:layout_weight=".2"/>
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4"
+                                        android:text="Peso Attuale"
+                                        android:gravity="center"
+                                        android:textAlignment="center"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:textAlignment="center"
+                                        android:textStyle=""
+                                        android:textColor="#000"
+                                        android:gravity="center"
+                                        android:id="@+id/txtPesoAttualeMain"
+                                        android:layout_weight="0.4"
+                                        android:text="100 Kg"/>
+
+                                </LinearLayout>
+
+
+
+
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.35"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:elevation="@dimen/cardview_default_elevation"
+                        card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                        >
+
+                        <!-- TODO: devo mettere dei button a fianco degli indicatori '?' che portano alla descrizione    -->
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:id="@+id/pnlMG"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.33"
+                                android:orientation="vertical"
+                                android:padding="5dp"
+                                android:weightSum="1">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:src="@drawable/ic_fat_filled"
+                                        android:layout_weight="0.4"/>
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.3"
+                                    android:text="Massa Grassa"
+                                    android:gravity="bottom"
+                                    android:textAlignment="center"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.3"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:textStyle=""
+                                        android:textColor="#000"
+                                        android:gravity="right|center"
+                                        android:paddingRight="10dp"
+                                        android:id="@+id/txtMassaGrassa"
+                                        android:layout_weight="0.75"
+                                        android:text="5 %"/>
+
+                                    <ImageView
+                                        android:id="@+id/bollinoMG"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.25"/>
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@android:color/darker_gray" />
+
+
+
+
+                            <LinearLayout
+                                android:id="@+id/pnlBMI"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.33"
+                                android:orientation="vertical"
+                                android:padding="5dp"
+                                android:weightSum="1">
+
+                                    <ImageView
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:src="@drawable/ic_bmi_filled"
+                                        android:layout_weight="0.4"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.3"
+                                        android:text="BMI"
+                                        android:gravity="bottom"
+                                        android:textAlignment="center"
+                                        />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.3"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:textStyle=""
+                                            android:textColor="#000"
+                                            android:gravity="right|center"
+                                            android:id="@+id/txtBMIMain"
+                                            android:paddingRight="10dp"
+                                            android:layout_weight="0.75"
+                                            android:text="2800 Kcal"/>
+
+                                        <ImageView
+                                            android:id="@+id/bollinoBMI"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.25"/>
+
+                                    </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@android:color/darker_gray" />
+
+                            <LinearLayout
+                                android:id="@+id/pnlDieta"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.33"
+                                android:orientation="vertical"
+                                android:padding="5dp"
+                                android:weightSum="1">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="1"
+                                    android:gravity="center"
+                                    android:layout_weight="0.4">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/ic_apple_filled"/>
+
+                                </LinearLayout>
+
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.6"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.5"
+                                        android:text="Dieta"
+                                        android:gravity="bottom"
+                                        android:textAlignment="center"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:textStyle=""
+                                        android:textColor="#000"
+                                        android:id="@+id/txtMetabolismoTotale"
+                                        android:textAlignment="center"
+                                        android:layout_weight="0.5"
+                                        android:text="2800 Kcal"/>
+
+
+
+                                </LinearLayout>
+
+
+
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="@dimen/cardview_default_elevation"
+                card_view:cardCornerRadius="@dimen/cardview_default_radius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.22"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:text="Vita"
+                            android:gravity="bottom"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:textStyle=""
+                            android:textColor="#000"
+                            android:id="@+id/txtVitaAttuale"
+                            android:textAlignment="center"
+                            android:layout_weight="0.48"
+                            android:text="115.5 cm"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.22"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:text="Collo"
+                            android:gravity="bottom"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:textStyle=""
+                            android:textColor="#000"
+                            android:id="@+id/txtColloAttuale"
+                            android:textAlignment="center"
+                            android:layout_weight="0.48"
+                            android:text="40.5 cm"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.22"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:text="Fianchi"
+                            android:gravity="bottom"
+                            android:textAlignment="center"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:textStyle=""
+                            android:textColor="#000"
+                            android:id="@+id/txtFianchiAttuale"
+                            android:textAlignment="center"
+                            android:layout_weight="0.48"
+                            android:text="115.5 cm"/>
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@android:color/darker_gray" />
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical"
+                        android:gravity="right"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/btnWHRMain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:src="@drawable/ic_help_outline_black_24dp"
+                            android:layout_weight="0.2"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.35"
+                            android:text="Rapporto\nVita/Altezza"
+                            android:gravity="bottom"
+                            android:textAlignment="center"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3"
+                            android:orientation="horizontal"
+                            android:gravity="top|right"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/txtWHRMain"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:textStyle=""
+                                android:textColor="#000"
+                                android:gravity="right"
+                                android:paddingRight="10dp"
+                                android:layout_weight="0.65"
+                                android:text="0.5"/>
+
+                            <ImageView
+                                android:id="@+id/bollinoWHR"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>

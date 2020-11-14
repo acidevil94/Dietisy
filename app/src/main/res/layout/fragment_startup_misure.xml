@@ -1,0 +1,324 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.andrea.dietisy.fragment.startupFrags.StartupMisureFragment">
+
+
+
+    <!--TODO
+    aggiungere tootlip che informa a cosa serve quel valore -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.93"
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:weightSum="1.2"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.32"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:text="Livello Attività"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_weight="0.3" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.48">
+
+
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.13"
+                        android:id="@+id/btnSedentario"
+                        android:background="#fff"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_sedentario_nofill"/>
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.13"
+                        android:id="@+id/btnLeggermenteAttivo"
+                        android:background="#fff"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_leggermente_attivo_nofill"/>
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.13"
+                        android:id="@+id/btnAttivo"
+                        android:background="#fff"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_attivo_filled"/>
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.13"
+                            android:id="@+id/btnMoltoAttivo"
+                            android:background="#fff"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_molto_attivo_nofill"/>
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.13"
+                        android:id="@+id/btnExtAttivo"
+                        android:background="#fff"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_ext_attivo_nofill"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtLvlAttivitàStartup"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:text="Moderatamente Attivo"
+                        android:textStyle=""
+                        android:layout_weight="0.2" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.03"></LinearLayout>
+
+                <TextView
+                    android:text="Misure Corporee"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="0.08" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.18"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:weightSum="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_weight="0.5">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:hint="Girovita"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/colorPrimary"
+                            android:ems="10"
+                            android:id="@+id/txtVitaStartup" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:text="cm"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_weight="0.19" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.18"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:weightSum="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_weight="0.5">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:hint="Fianchi"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/colorPrimary"
+                            android:ems="10"
+                            android:id="@+id/txtFianchiStartup" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:text="cm"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_weight="0.19" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.18"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:weightSum="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_weight="0.5">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:hint="Collo"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/colorPrimary"
+                            android:ems="10"
+                            android:id="@+id/txtColloStartup" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:text="cm"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_weight="0.19" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.18"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:weightSum="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_weight="0.5">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:hint="Polso"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:inputType="numberDecimal"
+                            android:textColor="#000000"
+                            android:textColorHint="@color/colorPrimary"
+                            android:ems="10"
+                            android:id="@+id/txtPolsoStartup" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:text="cm"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_weight="0.19" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:background="#fff"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_forward_filled"
+                android:scaleType="fitCenter"
+                android:id="@+id/btnAvantiStartupMisure"
+                android:layout_weight="0.2"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

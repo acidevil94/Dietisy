@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="colorPrimary">#3F51B5</color> -->
+
+    <!-- <color name="colorPrimaryDark">#303F9F</color> -->
+
+    <color name="colorPrimary">#88b04b</color>
+    <color name="colorPrimaryLight">#9bb475</color>
+    <color name="colorPrimaryDark">#6e8f3d</color>
+    <color name="colorAccent">#88b04b</color>
+    <color name="colorText">#000000</color>
+
+    <color name="highlight">#cc7a00</color>
+
+
+    <color name="color_rosso">#f00</color>
+    <color name="color_verde">#33cc33</color>
+
+    <color name="color_BMI_sottopesoGrave">#0000ff</color>
+    <color name="color_BMI_sottopesoLieve">#00ffff</color>
+    <color name="color_BMI_normopeso">#00ff00</color>
+    <color name="color_BMI_sovrappeso">#ffcc00</color>
+    <color name="color_BMI_obesoClasse1">#ff6600</color>
+    <color name="color_BMI_obesoClasse2">#ff0000</color>
+    <color name="color_BMI_obesoClasse3">#cc0066</color>
+
+    <color name="black_overlay">#221533</color>
+</resources>

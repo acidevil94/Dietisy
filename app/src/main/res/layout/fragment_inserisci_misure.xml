@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_misure"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="850dp"
+    android:minHeight="450dp"
+    android:orientation="vertical"
+    android:weightSum="1.01"
+    android:gravity="right"
+    android:background="#fff"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_title_size_1"
+        android:text="Inserisci Misure Corporee" />
+
+    <TextView
+        android:text="Data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_weight="0.1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/btnInserisciDataMisure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_calendar_filled"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDataMisure"
+            android:hint="Seleziona una data..."
+            android:gravity="center"
+            android:textStyle=""
+            android:textColor="#000"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="0.5">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Vita"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textColorHint="@color/colorPrimary"
+                android:ems="10"
+                android:id="@+id/txtVitaValore" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:text="cm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_weight="0.19" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="0.5">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Fianchi"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textColorHint="@color/colorPrimary"
+                android:ems="10"
+                android:id="@+id/txtFianchiValore" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:text="cm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_weight="0.19" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="0.5">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Collo"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textColorHint="@color/colorPrimary"
+                android:ems="10"
+                android:id="@+id/txtColloValore" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:text="cm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_weight="0.19" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center|bottom">
+
+        <Button
+            android:text="Annulla"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnInserisciMisureAnnulla"
+            android:textColor="@color/colorPrimary"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_gravity="center"/>
+
+
+        <Button
+            android:text="Salva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnInserisciMisureSalva"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

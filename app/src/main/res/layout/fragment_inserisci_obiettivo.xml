@@ -1,0 +1,122 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_obiettivo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="850dp"
+    android:minHeight="400dp"
+    android:orientation="vertical"
+    android:weightSum="0.6"
+    android:background="#fff"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_title_size_1"
+        android:text="Inserisci Nuovo Obiettivo" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:text="Raccomandazione peso ideale:"/>
+        <TextView
+            android:id="@+id/txtPesoIdealeObiettivo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textStyle=""
+            android:text="70 - 85 Kg"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_weight="0.5">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Obiettivo"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textColorHint="@color/colorPrimary"
+                android:ems="10"
+                android:id="@+id/txtObiettivoValore" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:text="Kg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_weight="0.19" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="bottom|center">
+        <Button
+            android:text="Annulla"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnInserisciObiettivoAnnulla"
+            android:textColor="@color/colorPrimary"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_gravity="center"/>
+
+
+        <Button
+            android:text="Salva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnInserisciObiettivoSalva"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

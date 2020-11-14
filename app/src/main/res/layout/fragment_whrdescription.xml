@@ -1,0 +1,360 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:minWidth="850dp"
+    android:minHeight="600dp"
+    android:weightSum="1.05">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_title_size_1"
+        android:text="Rapporto Vita-Altezza" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.18"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/desc_WH"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textStyle="" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/darker_gray" />
+
+
+    <TextView
+        android:id="@+id/txtWHRFrag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:text="Rapporto vita-altezza: 0.45"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.52"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:weightSum="1.22"
+        >
+
+        <LinearLayout
+            android:id="@+id/pnlWHRMagroGrave"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:padding="10dp"
+                    android:background="@color/color_BMI_sottopesoGrave"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="GRAVE MAGREZZA"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                android:id="@+id/txtWHRMagroGrave"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="&lt; 16.5"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pnlWHRMagro"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:padding="10dp"
+                    android:background="@color/color_BMI_sottopesoLieve"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="MAGREZZA LIEVE"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                android:id="@+id/txtWHRMagro"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="16.5 - 18.5"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pnlWHRSalute"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:padding="10dp"
+                    android:background="@color/color_BMI_normopeso"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="IN SALUTE"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                android:id="@+id/txtWHRSalute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="18.5 - 25"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pnlWHRSovrappeso"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:padding="10dp"
+                    android:background="@color/color_BMI_sovrappeso"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="SOVRAPPESO"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                android:id="@+id/txtWHRSovrappeso"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="25 - 30"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pnlWHRSerioSovrappeso"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:padding="10dp"
+                    android:background="@color/color_BMI_obesoClasse1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="SERIAMENTE SOVRAPPESO"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                android:id="@+id/txtWHRSerioSovrappeso"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="25 - 30"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pnlWHRObesita"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:padding="10dp"
+                    android:background="@color/color_BMI_obesoClasse2"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="OBESITA'"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                android:id="@+id/txtWHRObesita"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="30 - 35"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/btnOkWHR"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginTop="10dp"
+        android:text="OK"
+        android:textColor="@color/colorPrimary"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
